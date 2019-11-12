@@ -1,0 +1,7 @@
+def getWordGuessed(secretWord,lettersGuessed):
+    for x in secretWord:
+        if x=='_' or x==' ':
+            continue
+        elif (x in lettersGuessed) == False:
+            secretWord=secretWord.replace(x,'_ ')
+    return(secretWord)
